@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/WWWMarket-app%20%20/static/css/main.477272b6.css",
-    "main.js": "/WWWMarket-app%20%20/static/js/main.d47cf9cb.js",
-    "index.html": "/WWWMarket-app%20%20/index.html",
-    "main.477272b6.css.map": "/WWWMarket-app%20%20/static/css/main.477272b6.css.map",
-    "main.d47cf9cb.js.map": "/WWWMarket-app%20%20/static/js/main.d47cf9cb.js.map"
+    "main.css": "/WWWMarket-app%20/static/css/main.477272b6.css",
+    "main.js": "/WWWMarket-app%20/static/js/main.d47cf9cb.js",
+    "index.html": "/WWWMarket-app%20/index.html",
+    "main.477272b6.css.map": "/WWWMarket-app%20/static/css/main.477272b6.css.map",
+    "main.d47cf9cb.js.map": "/WWWMarket-app%20/static/js/main.d47cf9cb.js.map"
   },
   "entrypoints": [
     "static/css/main.477272b6.css",
