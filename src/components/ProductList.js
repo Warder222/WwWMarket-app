@@ -1,36 +1,22 @@
+// src/components/ProductList.js
 import React from 'react';
+import { mockProducts } from '../data/products';
 
-const ProductList = ({ products }) => {
+const ProductList = () => {
   return (
-    <div>
-      <h2>Список товаров</h2>
-      {products.map((product, index) => (
-        <div key={index}>
-          <h3>{product.title}</h3>
-          <p>{product.description}</p>
-          <p>Цена: {product.price} ₽</p>
-        </div>
-      ))}
+    <div className="space-y-4">
+      <h2 className="text-xl font-semibold">Список товаров</h2>
+      <div className="grid grid-cols-1 gap-4">
+        {mockProducts.map((product, index) => (
+          <div key={index} className="bg-white shadow rounded-lg p-4">
+            <h3 className="text-lg font-semibold">{product.title}</h3>
+            <p className="text-gray-600 mt-1">{product.description}</p>
+            <p className="text-blue-600 font-bold mt-2">{product.price} ₽</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default ProductList;
-// src/data/products.js
-export const mockProducts = [
-  {
-    title: 'iPhone 13 Pro',
-    description: 'Новый iPhone 13 Pro в отличном состоянии.',
-    price: 75000,
-  },
-  {
-    title: 'Ноутбук Lenovo',
-    description: 'Производительный ноутбук для работы и учёбы.',
-    price: 35000,
-  },
-  {
-    title: 'Велосипед детский',
-    description: 'Удобный велосипед для детей от 6 до 12 лет.',
-    price: 8000,
-  },
-];

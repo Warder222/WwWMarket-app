@@ -1,12 +1,19 @@
+// src/components/UserProfile.js
 import React from 'react';
 
 const UserProfile = ({ user }) => {
   return (
-    <div>
+    <div className="bg-white shadow rounded-lg p-4 mb-6">
       <h2>Личный кабинет</h2>
-      <p>Имя: {user.first_name}</p>
-      <p>Фамилия: {user.last_name}</p>
-      <p>Username: @{user.username}</p>
+      {user ? (
+        <>
+          <p><strong>Имя:</strong> {user.first_name}</p>
+          <p><strong>Фамилия:</strong> {user.last_name || 'Не указана'}</p>
+          <p><strong>Username:</strong> @{user.username || 'не указан'}</p>
+        </>
+      ) : (
+        <p>Данные пользователя не найдены.</p>
+      )}
     </div>
   );
 };
